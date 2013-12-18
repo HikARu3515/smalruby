@@ -1,5 +1,5 @@
 module Smalruby
-  module Dino
+  module Ardino
     class Led < Dino::Components::Led
     end
   end

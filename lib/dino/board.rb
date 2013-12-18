@@ -1,5 +1,5 @@
 module Smalruby
-  module Dino
+  module Ardino
     class Board < Dino::Board
       def initialize
         super(Dino::TxRx::Serial.new)
