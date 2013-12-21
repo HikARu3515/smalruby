@@ -11,7 +11,7 @@ rgb_led = Smalruby::Arduino::Rgb_led.new(pins: {red: 13, blue: 11, green: 10}, b
 
 
 loop do
-  p hoge = [:red, :blue, :green][rand(3)]
-  #rgb_led.send(hoge)
-  sleep 0.5
+  p hoge = [:red,:blue,:green,:off,:cyan,:yellow,:magenta,:white][rand(8)]
+  rgb_led.send(hoge)
+  sleep 0.1
 end
